@@ -3,298 +3,437 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>됴됴됴 DYODYODYO | 재미있는 걸 만드는 작은 회사</title>
-<meta name="description" content="됴됴됴(DYODYODYO)는 게임·앱 개발과 출판·디지털 콘텐츠를 만드는 1인 크리에이티브 스튜디오입니다.">
+<title>됴됴됴 DYODYODYO | Ideas into Reality</title>
+<meta name="description" content="됴됴됴(DYODYODYO)는 게임, 소프트웨어, 하드웨어, 콘텐츠를 만드는 1인 크리에이티브 스튜디오입니다. 재미있는 걸 꾸준히 만듭니다.">
+<meta name="theme-color" content="#07152E">
 <link rel="canonical" href="https://dyodyodyo.com/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="DYODYODYO">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:url" content="https://dyodyodyo.com/">
-<meta property="og:title" content="됴됴됴 DYODYODYO">
-<meta property="og:description" content="재미있는 걸 만드는 작은 회사">
-<meta property="og:image" content="https://dyodyodyo.com/images/og.jpg">
-<link rel="icon" type="image/png" href="/images/favicon.png">
+<meta property="og:title" content="됴됴됴 DYODYODYO — Ideas into Reality">
+<meta property="og:description" content="재미있는 걸 꾸준히 만드는 작은 크리에이티브 스튜디오">
+<meta property="og:image" content="https://dyodyodyo.com/images/og-wide.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DYODYODYO 됴됴됴 고양이 로고">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="됴됴됴 DYODYODYO — Ideas into Reality">
+<meta name="twitter:description" content="재미있는 걸 꾸준히 만드는 작은 크리에이티브 스튜디오">
+<meta name="twitter:image" content="https://dyodyodyo.com/images/og-wide.jpg">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
 <link rel="apple-touch-icon" href="/images/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jua&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "됴됴됴 DYODYODYO",
+  "alternateName": ["DYODYODYO", "됴됴됴", "dyodyodyo.com"],
+  "url": "https://dyodyodyo.com/"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DYODYODYO",
+  "alternateName": "됴됴됴",
+  "description": "게임, 소프트웨어, 하드웨어, 콘텐츠를 만드는 서울의 1인 크리에이티브 스튜디오",
+  "url": "https://dyodyodyo.com/",
+  "logo": "https://dyodyodyo.com/images/logo.jpg",
+  "image": ["https://dyodyodyo.com/images/logo.jpg", "https://dyodyodyo.com/images/og-wide.jpg"],
+  "slogan": "Ideas into Reality.",
+  "email": "contact@dyodyodyo.com",
+  "sameAs": ["https://www.instagram.com/dyodyodyo_games/"]
+}
+]
+</script>
+<meta name="thumbnail" content="https://dyodyodyo.com/images/logo.jpg">
+<script>document.documentElement.classList.add("js")</script>
 <style>
   :root{
-    --navy:#0B1B4D; --navy-2:#13275f; --ink:#1a1d33; --body:#4b4f66; --muted:#8a8ea6;
-    --yellow:#FFD43B; --yellow-2:#FFE680; --cream:#FFF8E1; --pink:#FF8FA3; --pink-l:#FFE3E8;
-    --mint:#5ED6C0; --mint-l:#DDF7F1; --sky:#7CB8FF; --sky-l:#E1EEFF; --line:#EFE6C8;
-    --r-lg:32px; --r:22px; --max:1140px;
-    --display:'Jua','Fredoka','Pretendard',sans-serif;
-    --shadow:0 6px 0 rgba(11,27,77,.12);
+    /* 브랜드 컬러 */
+    --navy:#07152E; --navy-2:#102347; --navy-3:#1B3160;
+    --yellow:#FFD43B; --yellow-2:#FFE680; --yellow-soft:#FFF6D1;
+    --white:#FFFFFF; --gray:#A8B0C0;
+    /* 보조 */
+    --bg:#F5F6F9; --line:#E3E6EE; --ink:#07152E; --body:#3B4458; --muted:#5D6679;
+    --r-lg:28px; --r:20px; --max:1160px;
+    --sans:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    --round:'Fredoka','Pretendard',sans-serif;
+    --shadow:0 4px 0 var(--navy);
+    --shadow-soft:0 10px 30px rgba(7,21,46,.08);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;scroll-padding-top:84px}
-  body{font-family:'Pretendard',-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--body);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all}
+  html{scroll-behavior:smooth;scroll-padding-top:90px}
+  body{font-family:var(--sans);color:var(--body);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
   a{color:inherit;text-decoration:none}
-  img{max-width:100%;display:block}
+  img{max-width:100%;height:auto;display:block}
+  button{font:inherit}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-  h1,h2,h3{font-family:var(--display);color:var(--ink);font-weight:400;line-height:1.25;letter-spacing:-.01em}
+  h1,h2,h3{color:var(--ink);font-weight:800;line-height:1.25;letter-spacing:-.02em}
+  :focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:8px}
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--yellow);color:var(--navy);font-weight:800;padding:10px 16px;border-radius:999px}
+  .skip:focus{top:12px}
 
   /* ---------- Header ---------- */
   header{position:fixed;top:14px;left:0;right:0;z-index:50;pointer-events:none}
-  .nav{pointer-events:auto;max-width:var(--max);margin:0 auto;padding:0 22px}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;background:#fff;border:3px solid var(--navy);border-radius:999px;padding:8px 10px 8px 12px;box-shadow:var(--shadow)}
-  .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:24px;color:var(--navy)}
-  .brand img{width:40px;height:40px;border-radius:50%;border:2.5px solid var(--navy)}
-  .menu{display:flex;gap:6px;list-style:none;font-weight:700;font-size:15px;color:var(--navy)}
-  .menu a{display:block;padding:9px 16px;border-radius:999px;transition:background .15s}
-  .menu a:hover{background:var(--yellow-2)}
+  .nav{pointer-events:auto;max-width:var(--max);margin:0 auto;padding:0 22px;position:relative}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border:2px solid var(--navy);border-radius:999px;padding:7px 8px 7px 10px;box-shadow:var(--shadow)}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--round);font-weight:700;font-size:21px;color:var(--navy);letter-spacing:.02em}
+  .brand img{width:40px;height:40px;border-radius:50%;border:2px solid var(--navy)}
+  .brand small{font-family:var(--sans);font-weight:700;font-size:14px;color:var(--muted);letter-spacing:0}
+  .menu{display:flex;gap:2px;list-style:none;font-weight:700;font-size:15px;color:var(--navy)}
+  .menu a{display:block;padding:9px 15px;border-radius:999px;transition:background .15s}
+  .menu a:hover{background:var(--yellow-soft)}
   .right{display:flex;align-items:center;gap:8px}
-  .lang{font:700 13px 'Pretendard',sans-serif;background:var(--navy);color:#fff;border:0;border-radius:999px;padding:9px 14px;cursor:pointer}
-  .burger{display:none;background:var(--yellow);border:2.5px solid var(--navy);border-radius:50%;width:42px;height:42px;cursor:pointer}
-  .burger span{display:block;width:18px;height:2.5px;background:var(--navy);margin:3.5px auto;border-radius:2px}
+  .lang{font:700 14px var(--sans);background:var(--navy);color:#fff;border:0;border-radius:999px;padding:9px 15px;cursor:pointer;min-height:40px}
+  .lang:hover{background:var(--navy-3)}
+  .burger{display:none;background:var(--yellow);border:2px solid var(--navy);border-radius:50%;width:44px;height:44px;cursor:pointer}
+  .burger span{display:block;width:18px;height:2.5px;background:var(--navy);margin:3.5px auto;border-radius:2px;transition:transform .2s,opacity .2s}
+  .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+  .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
   @media (max-width:900px){
-    .menu{position:absolute;top:72px;left:22px;right:22px;flex-direction:column;background:#fff;border:3px solid var(--navy);border-radius:var(--r);padding:10px;box-shadow:var(--shadow);display:none}
+    .brand small{display:none}
+    .menu{position:absolute;top:66px;left:22px;right:22px;flex-direction:column;gap:2px;background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:8px;box-shadow:var(--shadow);display:none;max-height:calc(100vh - 100px);overflow-y:auto;animation:drop .18s ease-out}
     .menu.open{display:flex}
+    .menu a{padding:14px 18px;font-size:17px;border-radius:14px;display:flex;justify-content:space-between;align-items:center}
+    .menu a::after{content:"›" / "";font-size:22px;line-height:1;color:var(--gray)}
+    .menu a:active{background:var(--yellow-soft)}
+    html.menu-open{overflow:hidden}
+    html.menu-open body::after{content:"";position:fixed;inset:0;background:rgba(7,21,46,.5);z-index:40}
+    @keyframes drop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
     .burger{display:block}
   }
 
   /* ---------- Buttons ---------- */
-  .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-size:19px;padding:14px 26px;border-radius:999px;border:3px solid var(--navy);box-shadow:0 5px 0 var(--navy);transition:transform .12s,box-shadow .12s}
-  .btn:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--navy)}
-  .btn:active{transform:translateY(5px);box-shadow:0 0 0 var(--navy)}
-  .btn-navy{background:var(--navy);color:#fff}
-  .btn-white{background:#fff;color:var(--navy)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:800;font-size:17px;padding:14px 26px;min-height:52px;border-radius:999px;border:2px solid var(--navy);box-shadow:var(--shadow);transition:transform .12s,box-shadow .12s,background .15s}
+  .btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--navy)}
+  .btn:active{transform:translateY(4px);box-shadow:0 0 0 var(--navy)}
   .btn-yellow{background:var(--yellow);color:var(--navy)}
+  .btn-white{background:#fff;color:var(--navy)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .on-dark .btn{border-color:var(--yellow);box-shadow:0 4px 0 #000}
+  .on-dark .btn-white{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+  .on-dark .btn-white:hover{background:rgba(255,255,255,.08)}
 
   /* ---------- Hero ---------- */
-  .hero{background:var(--yellow);padding:150px 0 0;position:relative;overflow:hidden}
-  .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(11,27,77,.09) 2px,transparent 2px);background-size:26px 26px}
-  .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:end}
-  .hero-text{padding-bottom:110px}
-  .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:2.5px solid var(--navy);border-radius:999px;padding:6px 14px;font-weight:800;font-size:13px;color:var(--navy);margin-bottom:22px}
-  .tag i{width:8px;height:8px;border-radius:50%;background:var(--pink);display:block}
-  .hero h1{font-size:clamp(44px,6.4vw,78px);color:var(--navy);margin-bottom:20px}
-  .hero h1 .hl{position:relative;white-space:nowrap}
-  .hero h1 .hl::after{content:"";position:absolute;left:-4px;right:-4px;bottom:6%;height:30%;background:#fff;border-radius:10px;z-index:-1}
-  .hero h1 .hl span{position:relative;z-index:1}
-  .hero p{font-size:clamp(16px,1.8vw,19px);color:var(--navy);opacity:.85;max-width:500px;margin-bottom:34px;font-weight:500}
-  .ctas{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-cat{position:relative;align-self:end}
-  .hero-cat img{width:100%;max-width:520px;margin-left:auto;filter:drop-shadow(0 10px 0 rgba(11,27,77,.15));animation:peek 4s ease-in-out infinite;transform-origin:bottom center}
-  @keyframes peek{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px) rotate(-1.5deg)}}
-  .bubble{position:absolute;top:-14%;left:2%;z-index:2;background:#fff;border:3px solid var(--navy);border-radius:20px;padding:10px 16px;font-family:var(--display);font-size:20px;color:var(--navy);box-shadow:var(--shadow);animation:pop 4s ease-in-out infinite}
-  .bubble::after{content:"";position:absolute;bottom:-12px;right:30px;width:18px;height:18px;background:#fff;border-right:3px solid var(--navy);border-bottom:3px solid var(--navy);transform:rotate(45deg)}
-  @keyframes pop{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-  .spark{position:absolute;font-size:28px;animation:twinkle 2.4s ease-in-out infinite}
-  @keyframes twinkle{50%{transform:scale(1.3) rotate(15deg);opacity:.6}}
-  .hero-floor{height:28px;background:var(--navy);position:relative}
+  .hero{background:var(--navy);color:#C9D1E3;padding:148px 0 0;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1.5px,transparent 1.5px);background-size:26px 26px;mask-image:linear-gradient(180deg,#000 40%,transparent)}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
+  .hero-text{padding-bottom:96px}
+  .tag{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px;color:#fff;margin-bottom:22px}
+  .tag i{width:8px;height:8px;border-radius:50%;background:var(--yellow);display:block}
+  .slogan{font-family:var(--round);font-weight:700;font-size:clamp(46px,6.8vw,84px);line-height:1.02;color:#fff;letter-spacing:-.01em;margin-bottom:18px}
+  .slogan em{font-style:normal;color:var(--yellow)}
+  .hero .sub{font-size:clamp(22px,2.6vw,30px);font-weight:800;color:#fff;margin-bottom:14px;letter-spacing:-.02em}
+  .hero .desc{font-size:clamp(16px,1.6vw,18px);max-width:520px;margin-bottom:32px}
+  .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+  .areas{display:flex;gap:8px;flex-wrap:wrap;list-style:none}
+  .areas li{font-family:var(--round);font-weight:600;font-size:14px;letter-spacing:.08em;color:var(--yellow);border:1.5px solid rgba(255,212,59,.45);border-radius:999px;padding:5px 13px}
+  .hero-cat{position:relative;align-self:end;display:flex;justify-content:center}
+  .hero-cat::before{content:"";position:absolute;bottom:-38%;left:50%;width:min(560px,110%);aspect-ratio:1;transform:translateX(-50%);background:var(--yellow);border-radius:50%}
+  .hero-cat img{position:relative;width:100%;max-width:500px;animation:peek 4.5s ease-in-out infinite;transform-origin:bottom center}
+  @keyframes peek{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px) rotate(-1.2deg)}}
+  .bubble{white-space:nowrap;position:absolute;top:-16%;left:-6%;z-index:2;background:#fff;border:2px solid var(--navy);border-radius:18px;padding:9px 16px;font-weight:800;font-size:17px;color:var(--navy);box-shadow:0 4px 0 #000;animation:pop 4.5s ease-in-out infinite}
+  .bubble::after{content:"";position:absolute;bottom:-9px;right:30px;width:16px;height:16px;background:#fff;border-right:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:rotate(45deg)}
+  @keyframes pop{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
   @media (max-width:900px){
-    .hero{padding-top:120px}
-    .hero .wrap{grid-template-columns:1fr}
-    .hero-text{padding-bottom:20px}
-    .hero-cat{margin-top:56px}
-    .hero-cat img{max-width:300px;margin:0 auto}
-    .bubble{font-size:16px;left:4%;top:-50px}
+    .hero{padding-top:112px}
+    .hero .wrap{grid-template-columns:1fr;gap:0}
+    .hero-cat{order:-1;margin-bottom:8px;padding-top:46px}
+    .hero-cat::before{display:none}
+    .hero-cat img{max-width:210px}
+    .bubble{font-size:15px;top:0;left:max(10px,calc(50% - 160px));padding:7px 12px}
+    .bubble::after{right:auto;left:42px}
+    .hero-text{padding-bottom:64px;text-align:left}
   }
+  .hero-floor{height:14px;background:var(--yellow)}
 
   /* ---------- Sections ---------- */
-  section{padding:100px 0}
-  .head{text-align:center;max-width:640px;margin:0 auto 54px}
-  .chip{display:inline-block;font-family:var(--display);font-size:16px;background:var(--navy);color:var(--yellow);padding:6px 16px;border-radius:999px;margin-bottom:16px}
-  .head h2{font-size:clamp(32px,4.2vw,48px);margin-bottom:12px}
+  section{padding:96px 0}
+  .head{max-width:680px;margin:0 0 44px}
+  .head.center{text-align:center;margin:0 auto 48px}
+  .eyebrow{display:inline-block;font-family:var(--round);font-weight:700;font-size:14px;letter-spacing:.14em;color:var(--navy);background:var(--yellow);padding:5px 14px;border-radius:999px;margin-bottom:14px}
+  .head h2{font-size:clamp(30px,4vw,44px);margin-bottom:10px}
   .head p{font-size:17px}
-
-  /* About */
-  #about{background:#fff;border-bottom:3px solid var(--navy)}
-  .about{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
-  .about h2{font-size:clamp(30px,3.8vw,44px);margin-bottom:18px}
-  .about p{font-size:17px;margin-bottom:14px}
-  .stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .stat{border:3px solid var(--navy);border-radius:var(--r);padding:24px 20px;box-shadow:var(--shadow)}
-  .stat b{display:block;font-family:var(--display);font-size:44px;color:var(--navy);line-height:1.1;font-weight:400}
-  .stat span{font-weight:700;font-size:14px;color:var(--navy);opacity:.75}
-  .s1{background:var(--yellow)}.s2{background:var(--pink-l)}.s3{background:var(--mint-l)}.s4{background:var(--sky-l)}
-  @media (max-width:900px){.about{grid-template-columns:1fr}}
+  @media (max-width:640px){section{padding:72px 0}.head,.head.center{margin-bottom:32px}}
 
   /* Business */
-  .biz-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:0 auto}
-  .biz{background:#fff;border:3px solid var(--navy);border-radius:var(--r-lg);padding:34px 28px 30px;box-shadow:var(--shadow);transition:transform .2s;position:relative;overflow:hidden}
-  .biz:hover{transform:translateY(-6px) rotate(-.5deg)}
-  .biz .ic{width:72px;height:72px;border-radius:22px;border:3px solid var(--navy);display:grid;place-items:center;font-size:36px;margin-bottom:22px}
-  .biz h3{font-size:27px;margin-bottom:10px}
-  .biz p{font-size:15.5px;margin-bottom:18px}
-  .biz ul{list-style:none;display:grid;gap:8px}
-  .biz li{font-weight:600;font-size:14.5px;color:var(--ink);display:flex;gap:8px;align-items:flex-start}
-  .biz li::before{content:"✦";color:var(--navy);flex:none}
-  .b1 .ic{background:var(--yellow)}.b2 .ic{background:var(--pink-l)}.b3 .ic{background:var(--mint-l)}
-  @media (max-width:900px){.biz-grid{grid-template-columns:1fr}}
+  #business{background:#fff;border-bottom:1px solid var(--line)}
+  .biz-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .biz{background:var(--bg);border:2px solid var(--navy);border-radius:var(--r-lg);padding:28px 24px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+  .biz:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .biz .ic{width:58px;height:58px;border-radius:18px;background:var(--navy);color:var(--yellow);display:grid;place-items:center;margin-bottom:20px}
+  .biz .ic svg{width:30px;height:30px}
+  .biz .label{font-family:var(--round);font-weight:700;font-size:15px;letter-spacing:.12em;color:var(--muted);margin-bottom:2px}
+  .biz h3{font-size:23px;margin-bottom:10px}
+  .biz p{font-size:15.5px;margin-bottom:16px}
+  .biz ul{list-style:none;display:grid;gap:6px;margin-top:auto}
+  .biz li{font-weight:600;font-size:15px;color:var(--ink);display:flex;gap:8px;align-items:flex-start}
+  .biz li::before{content:"";flex:none;width:7px;height:7px;border-radius:2px;background:var(--yellow);border:1.5px solid var(--navy);margin-top:9px}
+  .biz.hl{background:var(--yellow-soft)}
+  @media (max-width:1040px){.biz-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:600px){.biz-grid{grid-template-columns:1fr}}
 
   /* Games */
-  #games{background:var(--navy);color:#cfd6f5}
+  #games{background:var(--navy);color:#C9D1E3}
   #games .head h2{color:#fff}
-  #games .head p{color:#cfd6f5}
-  #games .chip{background:var(--yellow);color:var(--navy)}
-  .games{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .game{background:#fff;border:3px solid #000;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 0 rgba(0,0,0,.35);transition:transform .2s}
-  .game:hover{transform:translateY(-6px)}
-  .game-top{padding:26px 24px 0;display:flex;gap:16px;align-items:center}
-  .game-top img,.game-top .ph{width:84px;height:84px;border-radius:22px;border:3px solid var(--navy);flex:none;object-fit:cover;background:var(--sky-l);display:grid;place-items:center;font-size:36px}
-  .badge{display:inline-block;font-weight:800;font-size:12px;padding:4px 10px;border-radius:999px;border:2px solid var(--navy);margin-bottom:6px}
-  .badge.live{background:var(--mint)}.badge.soon{background:var(--yellow)}.badge.dev{background:var(--sky-l)}
-  .game h3{font-size:22px}
-  .game-body{padding:16px 24px 24px;display:flex;flex-direction:column;flex:1}
-  .game .genre{font-weight:700;font-size:13px;color:var(--muted);margin-bottom:8px}
-  .game p{font-size:15px;flex:1;margin-bottom:18px;color:var(--body)}
+  .games{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .game{background:#fff;border:2px solid #000;border-radius:var(--r-lg);padding:24px;display:grid;grid-template-columns:112px 1fr;gap:22px;align-items:start;box-shadow:0 5px 0 #000;transition:transform .2s}
+  .game:hover{transform:translateY(-4px)}
+  .game .gi{width:112px;height:112px;border-radius:26px;border:2px solid var(--navy);object-fit:cover;background:var(--yellow-soft);display:grid;place-items:center;font-size:44px;overflow:hidden}
+  .badge{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:14px;padding:3px 11px;border-radius:999px;border:1.5px solid var(--navy);color:var(--navy);margin-bottom:8px}
+  .badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+  .badge.live{background:#D8F5E6;color:#0B5B36;border-color:#0B5B36}
+  .badge.soon{background:var(--yellow);color:var(--navy)}
+  .badge.dev{background:#E4E9F4;color:var(--navy)}
+  .game h3{font-size:22px;margin-bottom:2px}
+  .game .genre{font-weight:700;font-size:14px;color:var(--muted);margin-bottom:8px}
+  .game p{font-size:15.5px;color:var(--body);margin-bottom:16px}
   .stores{display:flex;gap:8px;flex-wrap:wrap}
-  .stores a,.stores span{font-weight:800;font-size:13.5px;padding:10px 16px;border-radius:999px;border:2.5px solid var(--navy);color:var(--navy);background:var(--yellow)}
+  .stores a,.stores span{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:14.5px;padding:10px 16px;min-height:44px;border-radius:999px;border:2px solid var(--navy);color:var(--navy);background:var(--yellow)}
   .stores a:hover{background:var(--navy);color:#fff}
-  .stores span{background:#f1f1f6;color:var(--muted);border-color:#d6d6e2}
-  @media (max-width:960px){.games{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:640px){.games{grid-template-columns:1fr}}
+  .stores span{background:var(--bg);color:var(--muted);border-color:var(--line);border-style:dashed}
+  .vtag{display:inline-flex;align-items:center;font-weight:800;font-size:14px;padding:3px 10px;border-radius:999px;background:var(--navy);color:var(--yellow);margin:0 0 8px 4px;vertical-align:top}
+  .sndbtn{margin-top:14px;font-weight:800;font-size:15px;padding:9px 16px;min-height:44px;border-radius:999px;border:2px solid var(--yellow);background:transparent;color:#fff;cursor:pointer}
+  .sndbtn:hover{background:rgba(255,212,59,.12)}
+  .sndbtn[aria-pressed="true"]{background:var(--yellow);color:var(--navy)}
+  .game p.gnote{font-size:14px;color:var(--muted);margin:10px 0 0}
+  .gmore{margin-top:14px;border-top:1.5px dashed var(--line);padding-top:10px}
+  .gmore summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:14.5px;color:var(--navy);min-height:36px}
+  .gmore summary::-webkit-details-marker{display:none}
+  .gmore summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}
+  .gmore[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+  .gmore summary:hover{text-decoration:underline;text-underline-offset:4px}
+  .gmore ul{list-style:none;display:grid;gap:6px;margin:6px 0 10px}
+  .gmore li{font-size:15px;color:var(--ink);display:flex;gap:8px;align-items:flex-start}
+  .gmore li::before{content:"";flex:none;width:7px;height:7px;border-radius:2px;background:var(--yellow);border:1.5px solid var(--navy);margin-top:9px}
+  .gmore .plink{display:inline-block;font-weight:800;font-size:14.5px;color:var(--navy);border-bottom:3px solid var(--yellow);padding:4px 0}
+  .gmore .plink:hover{border-color:var(--navy)}
+
+  /* 미리보기 (마우스를 올리면 뜸, 터치 화면은 버튼으로 펼침) */
+  .game,.ct{position:relative}
+  .game.pv-show,.ct.pv-show{z-index:5}
+  .pv{position:absolute;z-index:6;overflow:hidden;background:var(--navy);border:3px solid #000;box-shadow:0 8px 0 rgba(0,0,0,.3);opacity:0;transform:translateY(12px) scale(.94);transform-origin:bottom center;transition:opacity .2s,transform .2s;pointer-events:none}
+  .pv-game{right:18px;top:50%;width:170px;aspect-ratio:9/16;border-radius:22px;transform:translateY(-46%) scale(.94);transform-origin:center}
+  .pv-show .pv.pv-game{transform:translateY(-50%)}
+  .pv-book{left:12px;bottom:calc(100% - 24px);width:220px;aspect-ratio:1;border-radius:18px;border-color:var(--navy)}
+  .pv img,.pv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s}
+  .pv img.on,.pv video{opacity:1}
+  .pv-show .pv{opacity:1;transform:none}
+  .pvbtn{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:14.5px;padding:10px 16px;min-height:44px;border-radius:999px;border:2px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer}
+  .pvbtn[aria-expanded="true"]{background:var(--navy);color:#fff}
+  .ctact{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+  .ctact .pvbtn{font-size:14px;padding:6px 12px;min-height:36px}
+  @media (hover:hover) and (pointer:fine){.pvbtn{display:none}}
+  @media (hover:none),(pointer:coarse){
+    .pv{position:relative;inset:auto;display:none;transform:none;opacity:1;pointer-events:auto;margin-top:14px;box-shadow:0 5px 0 rgba(0,0,0,.25)}
+    .pv-on .pv{display:block}
+    .pv.pv-game,.pv-show .pv.pv-game{width:170px;top:auto;right:auto;transform:none}
+    .ct.pv-on{flex-wrap:wrap}
+    .pv-book{flex-basis:100%;width:100%;max-width:300px;margin:2px auto 0}
+  }
+  @media (max-width:900px){.games{grid-template-columns:1fr}}
+  @media (max-width:480px){.game{grid-template-columns:72px 1fr;gap:14px;padding:20px 18px}.game .gi{width:72px;height:72px;border-radius:18px;font-size:32px}}
 
   /* Contents */
-  .contents{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .ct{background:#fff;border:3px solid var(--navy);border-radius:var(--r-lg);padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column}
-  .ct .cover{height:150px;border-radius:18px;border:3px solid var(--navy);display:grid;place-items:center;font-size:54px;margin-bottom:20px}
-  .ct .kind{font-weight:800;font-size:13px;color:var(--muted);margin-bottom:4px}
-  .ct h3{font-size:23px;margin-bottom:8px}
-  .ct p{font-size:15px;flex:1;margin-bottom:16px}
-  .ct a.more{align-self:flex-start;font-weight:800;font-size:14px;color:var(--navy);border-bottom:3px solid var(--yellow)}
-  .ct span.more{align-self:flex-start;font-weight:800;font-size:14px;color:var(--muted)}
-  @media (max-width:900px){.contents{grid-template-columns:1fr}}
+  #contents{padding:72px 0}
+  #contents .head{margin-bottom:28px}
+  .contents{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .ct{background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:14px;display:flex;gap:16px;align-items:stretch;transition:transform .2s,box-shadow .2s}
+  .ct:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .ct .cover{flex:none;align-self:flex-start;width:92px;height:124px;border-radius:12px;display:flex;justify-content:center;align-items:flex-end;font-size:36px;overflow:hidden;padding:12px 0 0}
+  .ct .cover>span{align-self:center}
+  .ct .cover img{width:68px;height:auto;border-radius:3px 3px 0 0;box-shadow:0 -2px 12px rgba(7,21,46,.18)}
+  .ct .body{display:flex;flex-direction:column;min-width:0;flex:1;padding:2px 0}
+  .ct .kind{font-weight:800;font-size:14px;color:var(--muted)}
+  .ct h3{font-size:17.5px;margin-bottom:4px}
+  .ct p{font-size:14px;line-height:1.6;flex:1;margin-bottom:8px}
+  .ct a.more{align-self:flex-start;font-weight:800;font-size:14px;color:var(--navy);border-bottom:3px solid var(--yellow);padding:2px 0}
+  .ct a.more:hover{border-color:var(--navy)}
+  .ct span.more{align-self:flex-start;font-weight:800;font-size:14px;color:var(--muted);padding:2px 0}
+  @media (max-width:1040px){.contents{grid-template-columns:1fr;max-width:640px}}
+  @media (max-width:600px){#contents{padding:56px 0}}
+
+  /* About */
+  #about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+  .about-logo{border-radius:var(--r-lg);overflow:hidden;border:2px solid var(--navy);box-shadow:var(--shadow);max-width:420px}
+  .about h2{font-size:clamp(30px,3.8vw,42px);margin-bottom:16px}
+  .about p{font-size:17px;margin-bottom:12px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+  .stat{border:2px solid var(--navy);border-radius:var(--r);padding:16px 14px;background:var(--bg)}
+  .stat b{display:block;font-family:var(--round);font-size:36px;color:var(--navy);line-height:1.1;font-weight:700}
+  .stat span{font-weight:700;font-size:14px;color:var(--muted)}
+  .stat.s1{background:var(--yellow)}
+  .stat.s1 span{color:var(--navy)}
+  @media (max-width:900px){.about{grid-template-columns:1fr;gap:32px}.about-logo{max-width:260px}}
+  @media (max-width:520px){.stats{grid-template-columns:1fr 1fr}}
+  .process{margin-top:72px;background:var(--navy);border-radius:var(--r-lg);padding:36px 32px;color:#C9D1E3}
+  .process-title{display:flex;flex-direction:column;align-items:flex-start;gap:4px;color:#fff;font-size:clamp(22px,2.6vw,28px);margin-bottom:26px}
+  .process-title .eyebrow{margin-bottom:6px}
+  .steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:none}
+  .steps li{position:relative;background:var(--navy-2);border:1.5px solid rgba(255,255,255,.14);border-radius:var(--r);padding:20px 18px}
+  .steps li:not(:last-child)::after{content:"→" / "";position:absolute;right:-14px;top:50%;transform:translateY(-50%);color:var(--yellow);font-weight:800;font-size:16px;z-index:1}
+  .steps b{display:block;font-family:var(--round);font-weight:700;font-size:15px;letter-spacing:.1em;color:var(--yellow);margin-bottom:6px}
+  .steps h4{color:#fff;font-size:19px;font-weight:800;margin-bottom:6px}
+  .steps p{font-size:15px}
+  @media (max-width:900px){.steps{grid-template-columns:1fr 1fr}.steps li:nth-child(2)::after{display:none}}
+  @media (max-width:520px){.process{padding:28px 20px;margin-top:56px}.steps{grid-template-columns:1fr}.steps li::after{display:none}}
 
   /* Support */
-  #support{background:#fff;border-top:3px solid var(--navy)}
   .support{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start}
-  .faq details{background:var(--cream);border:3px solid var(--navy);border-radius:var(--r);padding:18px 22px;margin-bottom:14px}
-  .faq summary{list-style:none;cursor:pointer;font-weight:800;font-size:16.5px;color:var(--ink);display:flex;justify-content:space-between;gap:16px;align-items:center}
+  .faq details{background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:16px 20px;margin-bottom:12px}
+  .faq summary{list-style:none;cursor:pointer;font-weight:800;font-size:16.5px;color:var(--ink);display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:32px}
   .faq summary::-webkit-details-marker{display:none}
-  .faq summary::after{content:"+";font-family:var(--display);font-size:26px;line-height:1;color:var(--navy);transition:transform .2s}
+  .faq summary::after{content:"+";font-family:var(--round);font-weight:600;font-size:26px;line-height:1;color:var(--navy);transition:transform .2s;flex:none}
   .faq details[open] summary::after{transform:rotate(45deg)}
   .faq details p{margin-top:10px;font-size:15.5px}
-  .contact{background:var(--yellow);border:3px solid var(--navy);border-radius:var(--r-lg);padding:34px 30px;box-shadow:var(--shadow);position:relative}
-  .contact img{position:absolute;width:120px;top:-62px;right:22px}
-  .contact h3{font-size:30px;margin-bottom:8px;color:var(--navy)}
-  .contact p{color:var(--navy);font-size:15.5px;margin-bottom:22px;font-weight:500}
-  .clist{list-style:none;display:grid;gap:10px;margin-bottom:22px}
-  .clist a{display:flex;align-items:center;gap:12px;background:#fff;border:2.5px solid var(--navy);border-radius:16px;padding:13px 16px;font-weight:800;color:var(--navy);font-size:15px}
-  .clist a:hover{background:var(--cream)}
-  .clist b{font-size:20px}
-  @media (max-width:900px){.support{grid-template-columns:1fr}.contact{margin-top:50px}}
+  .contact{background:var(--navy);color:#C9D1E3;border:2px solid var(--navy);border-radius:var(--r-lg);padding:34px 28px 28px;box-shadow:0 5px 0 var(--yellow);position:relative;margin-top:40px}
+  .contact img{position:absolute;width:118px;top:-60px;right:20px}
+  .contact h3{font-size:28px;margin-bottom:8px;color:#fff}
+  .contact p{font-size:15.5px;margin-bottom:20px}
+  .clist{list-style:none;display:grid;gap:10px;margin-bottom:20px}
+  .clist a{display:flex;align-items:center;gap:12px;background:var(--navy-2);border:1.5px solid rgba(255,255,255,.18);border-radius:16px;padding:13px 16px;font-weight:800;color:#fff;font-size:15.5px;min-height:52px}
+  .clist a:hover{border-color:var(--yellow)}
+  .clist svg{width:20px;height:20px;color:var(--yellow);flex:none}
+  @media (max-width:900px){.support{grid-template-columns:1fr}.contact{margin-top:64px}}
 
   /* Footer */
-  footer{background:var(--navy);color:#aeb8e0;padding:56px 0 40px;font-size:13.5px}
-  .ftop{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:28px;border-bottom:2px dashed rgba(255,255,255,.18);margin-bottom:24px}
+  footer{background:var(--navy);color:var(--gray);padding:52px 0 40px;font-size:14px;border-top:6px solid var(--yellow)}
+  .ftop{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:22px}
   footer .brand{color:#fff}
   footer .brand img{border-color:#fff}
-  .flinks{display:flex;gap:22px;flex-wrap:wrap;font-weight:700;color:#fff}
+  footer .brand small{color:var(--gray)}
+  .flinks{display:flex;gap:6px 20px;flex-wrap:wrap;font-weight:700;color:#fff}
+  .flinks a{padding:4px 0}
   .flinks a:hover{color:var(--yellow)}
   .bizinfo{line-height:2}
   .bizinfo span{display:inline-block;margin-right:16px}
-  .copy{margin-top:16px;color:#7d88b5}
+  .copy{margin-top:14px;color:#8F98AD}
 
-  .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
-  .reveal.in{opacity:1;transform:none}
-  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
+<a class="skip" href="#main" data-en="Skip to content">본문 바로가기</a>
 
 <header>
-  <div class="nav"><div class="nav-in">
-    <a href="#top" class="brand"><img src="images/mark.png" alt="">됴됴됴</a>
+  <nav class="nav" aria-label="주 메뉴"><div class="nav-in">
+    <a href="#top" class="brand"><img src="images/mark.png" alt="" width="40" height="40">DYODYODYO <small>됴됴됴</small></a>
     <div class="right">
       <ul class="menu" id="menu">
-        <li><a href="#about" data-en="About">회사소개</a></li>
         <li><a href="#business" data-en="What we do">사업분야</a></li>
         <li><a href="#games" data-en="Games">게임</a></li>
         <li><a href="#contents" data-en="Contents">콘텐츠</a></li>
+        <li><a href="#about" data-en="About">회사소개</a></li>
         <li><a href="#support" data-en="Contact">문의</a></li>
       </ul>
-      <button class="lang" id="langBtn">EN</button>
-      <button class="burger" id="burger" aria-label="메뉴"><span></span><span></span><span></span></button>
+      <button class="lang" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+      <button class="burger" id="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
     </div>
-  </div></div>
+  </div></nav>
 </header>
 
 <main id="top">
   <!-- HERO -->
-  <section class="hero" style="padding-bottom:0">
+  <section class="hero on-dark" style="padding-bottom:0" id="main">
     <div class="wrap">
       <div class="hero-text">
-        <span class="tag"><i></i><span data-en="Creative studio from Seoul">서울의 1인 크리에이티브 스튜디오</span></span>
-        <h1 data-en='We make <span class="hl"><span>fun things</span></span>,<br>one at a time'>재미있는 걸<br><span class="hl"><span>꾸준히</span></span> 만듭니다</h1>
-        <p data-en="DYODYODYO makes games and apps, and publishes books and digital content.">됴됴됴는 게임과 앱을 만들고, 책과 디지털 콘텐츠를 펴내는 작은 회사예요.</p>
+        <span class="tag"><i></i><span data-en="A Studio That Turns Ideas into Reality.">아이디어를 현실로 만드는 스튜디오</span></span>
+        <h1 class="slogan">Ideas into<br><em>Reality.</em></h1>
+        <p class="sub" data-en="We keep making fun things.">재미있는 걸 꾸준히 만듭니다.</p>
+        <p class="desc" data-en="DYODYODYO is a small studio that turns ideas into games, software, hardware and content — from planning to launch.">됴됴됴는 떠오른 아이디어를 게임, 소프트웨어, 하드웨어, 콘텐츠로 직접 만들어 세상에 내놓는 작은 스튜디오예요.</p>
         <div class="ctas">
-          <a href="#games" class="btn btn-navy" data-en="See our games →">게임 보러 가기 →</a>
+          <a href="#games" class="btn btn-yellow" data-en="See our games →">게임 보러 가기 →</a>
           <a href="#support" class="btn btn-white" data-en="Contact us">문의하기</a>
         </div>
+        <ul class="areas" aria-label="사업 분야"><li>GAME</li><li>SOFTWARE</li><li>HARDWARE</li><li>CONTENTS</li></ul>
       </div>
       <div class="hero-cat">
-        <div class="bubble" data-en="Hi there! 👋">안녕하세요! 👋</div>
-        <span class="spark" style="top:18%;right:4%">✨</span>
-        <span class="spark" style="top:46%;left:-2%;animation-delay:.8s">⭐</span>
-        <img src="images/cat.png" alt="됴됴됴 고양이 캐릭터" width="700" height="461">
+        <div class="bubble" data-en="New Idea Discovered ✨💡">새로운 아이디어 발견 ✨💡</div>
+        <img src="images/cat-laptop.webp" alt="노트북 앞에서 손을 흔드는 됴됴됴 고양이 마스코트" data-en-alt="DYODYODYO cat mascot waving from a laptop" width="900" height="575">
       </div>
     </div>
     <div class="hero-floor"></div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="wrap about">
-      <div class="reveal">
-        <span class="chip">ABOUT</span>
-        <h2 data-en="Small studio,<br>big curiosity">작은 회사,<br>큰 호기심</h2>
-        <p data-en="DYODYODYO is run by a hardware engineer who loves making things. Games, apps, books, little tools — if it sounds fun, we build it.">됴됴됴는 하드웨어 개발자가 운영하는 작은 크리에이티브 스튜디오예요. 게임, 앱, 책, 작은 도구까지 — 재미있겠다 싶으면 일단 만들어 봅니다.</p>
-        <p data-en="Planning, development, design and launch are all handled in-house, so ideas move fast and details get the attention they deserve.">기획부터 개발, 디자인, 출시까지 직접 하기 때문에 빠르게 움직이고, 작은 부분까지 꼼꼼하게 챙겨요.</p>
-      </div>
-      <div class="stats reveal">
-        <div class="stat s1"><b id="gameCount">2</b><span data-en="Games released">출시한 게임</span></div>
-        <div class="stat s2"><b>2</b><span data-en="Books published">펴낸 책</span></div>
-        <div class="stat s3"><b>1</b><span data-en="Maker">만드는 사람</span></div>
-        <div class="stat s4"><b>∞</b><span data-en="New ideas">새 아이디어</span></div>
-      </div>
-    </div>
   </section>
 
   <!-- BUSINESS -->
   <section id="business">
     <div class="wrap">
       <div class="head reveal">
-        <span class="chip">WHAT WE DO</span>
-        <h2 data-en="What we do">이런 일을 해요</h2>
-        <p data-en="The two things we focus on.">됴됴됴가 집중하는 두 가지 분야예요.</p>
+        <span class="eyebrow">WHAT WE DO</span>
+        <h2 data-en="Four things we make">이런 걸 만들어요</h2>
+        <p data-en="From code to circuits to books — we build what we find interesting, end to end.">코드부터 회로, 책까지. 재미있겠다 싶은 건 기획부터 출시까지 직접 만듭니다.</p>
       </div>
       <div class="biz-grid">
-        <div class="biz b1 reveal">
-          <div class="ic">🎮</div>
-          <h3 data-en="Games &amp; Apps">게임 · 앱 개발</h3>
-          <p data-en="Mobile games and handy apps that are easy to pick up and fun to come back to.">쉽게 시작하고 자꾸 생각나는 모바일 게임과 쓸모 있는 앱을 만들어요.</p>
+        <article class="biz hl reveal">
+          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12a4 4 0 0 1 4 4v1a4 4 0 0 1-7 2.6L14 14h-4l-1 1.6A4 4 0 0 1 2 13v-1a4 4 0 0 1 4-4z"/><path d="M7 11v3M5.5 12.5h3"/><circle cx="16" cy="11.5" r=".6" fill="currentColor"/><circle cx="18" cy="13.5" r=".6" fill="currentColor"/></svg></div>
+          <div class="label">GAME</div>
+          <h3 data-en="Mobile games">모바일 게임</h3>
+          <p data-en="Easy to start, hard to put down. We plan, build and run our own mobile games.">쉽게 시작하고 자꾸 생각나는 모바일 게임을 기획부터 운영까지 직접 해요.</p>
           <ul>
-            <li data-en="Casual mobile games (Google Play)">캐주얼 모바일 게임 (Google Play)</li>
-            <li data-en="Utility &amp; lifestyle apps">생활·유틸리티 앱</li>
-            <li data-en="Web prototypes &amp; mini games">웹 프로토타입 · 미니게임</li>
+            <li data-en="Casual &amp; strategy games">캐주얼 · 전략 게임</li>
+            <li data-en="Google Play releases">Google Play 출시</li>
+            <li data-en="Multilingual live service">다국어 · 라이브 운영</li>
           </ul>
-        </div>
-        <div class="biz b2 reveal">
-          <div class="ic">📚</div>
-          <h3 data-en="Publishing &amp; Content">출판 · 디지털 콘텐츠</h3>
-          <p data-en="Books, emoticons and game assets — content you can read, send and use.">읽고, 보내고, 쓰는 콘텐츠를 만들어요. 책부터 이모티콘, 게임 에셋까지.</p>
+        </article>
+        <article class="biz reveal">
+          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M9.5 13l-2 2 2 2M14.5 13l2 2-2 2"/></svg></div>
+          <div class="label">SOFTWARE</div>
+          <h3 data-en="Apps &amp; tools">앱 · 소프트웨어</h3>
+          <p data-en="Handy apps and small tools that make everyday work a little easier.">일상과 일을 조금 더 편하게 만드는 앱과 작은 도구를 만들어요.</p>
           <ul>
-            <li data-en="Books (Kyobo Book POD)">도서 출판 (교보문고 POD)</li>
+            <li data-en="Utility &amp; lifestyle apps">생활 · 유틸리티 앱</li>
+            <li data-en="Web services &amp; prototypes">웹 서비스 · 프로토타입</li>
+            <li data-en="Automation tools">개발 · 자동화 도구</li>
+          </ul>
+        </article>
+        <article class="biz reveal">
+          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 7V3M14 7V3M10 21v-4M14 21v-4M7 10H3M7 14H3M21 10h-4M21 14h-4"/></svg></div>
+          <div class="label">HARDWARE</div>
+          <h3 data-en="Electronics">하드웨어</h3>
+          <p data-en="Run by a hardware engineer — from circuit design to working prototypes.">하드웨어 개발자가 운영하는 스튜디오답게, 회로부터 시제품까지 다뤄요.</p>
+          <ul>
+            <li data-en="Circuit &amp; PCB design">회로 설계 · PCB</li>
+            <li data-en="FPGA &amp; embedded">FPGA · 임베디드</li>
+            <li data-en="Prototyping">시제품 제작</li>
+          </ul>
+        </article>
+        <article class="biz reveal">
+          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M9 8h7M9 11.5h5"/></svg></div>
+          <div class="label">CONTENTS</div>
+          <h3 data-en="Books &amp; content">출판 · 콘텐츠</h3>
+          <p data-en="Content to read, send and use — books, emoticons and game art.">읽고, 보내고, 쓰는 콘텐츠를 만들어요. 책부터 이모티콘, 게임 아트까지.</p>
+          <ul>
+            <li data-en="Books (Kyobo POD)">도서 출판 (교보문고 POD)</li>
             <li data-en="Messenger emoticons">메신저 이모티콘</li>
-            <li data-en="Game art &amp; asset packs">게임 아트 · 에셋</li>
+            <li data-en="Game art &amp; assets">게임 아트 · 에셋</li>
           </ul>
-        </div>
-</div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- GAMES -->
-  <section id="games">
+  <section id="games" class="on-dark">
     <div class="wrap">
       <div class="head reveal">
-        <span class="chip">GAMES</span>
+        <span class="eyebrow">GAMES</span>
         <h2 data-en="Our games">됴됴됴의 게임</h2>
-        <p data-en="Available now on Google Play.">지금 Google Play에서 만날 수 있어요.</p>
-      </div>
+        <p data-en="Hover over a card (or tap Preview) to see it in action. New games are on the way.">카드에 마우스를 올리면(폰은 미리보기) 플레이 화면이 나와요. 새 게임도 곧 나와요.</p>      </div>
       <div class="games" id="gameList"></div>
     </div>
   </section>
@@ -303,7 +442,7 @@
   <section id="contents">
     <div class="wrap">
       <div class="head reveal">
-        <span class="chip">CONTENTS</span>
+        <span class="eyebrow">CONTENTS</span>
         <h2 data-en="Books &amp; content">책과 콘텐츠</h2>
         <p data-en="Stories and things we've published.">됴됴됴가 펴낸 이야기와 콘텐츠예요.</p>
       </div>
@@ -311,25 +450,55 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about">
+      <img class="about-logo reveal" src="images/logo.jpg" alt="DYODYODYO 됴됴됴 로고" width="800" height="800" loading="lazy">
+      <div class="reveal">
+        <span class="eyebrow">ABOUT</span>
+        <h2 data-en="Small studio,<br>big curiosity">작은 회사,<br>큰 호기심</h2>
+        <p data-en="DYODYODYO is an independent creative studio run by a hardware engineer who loves making things. Games, apps, circuits, books — if it sounds fun, we build it.">됴됴됴는 만드는 걸 좋아하는 하드웨어 개발자가 운영하는 독립 크리에이티브 스튜디오예요. 게임, 앱, 회로, 책까지 — 재미있겠다 싶으면 일단 만들어 봅니다.</p>
+        <p data-en="Planning, development, design and launch are all done in-house, so ideas move fast and details get the attention they deserve.">기획부터 개발, 디자인, 출시까지 직접 하기 때문에 빠르게 움직이고, 작은 부분까지 꼼꼼하게 챙겨요.</p>
+        <div class="stats">
+          <div class="stat s1"><b id="gameCount">2</b><span data-en="Games out">출시한 게임</span></div>
+          <div class="stat"><b id="soonCount">2</b><span data-en="Coming soon">출시 예정</span></div>
+          <div class="stat"><b>2</b><span data-en="Books">펴낸 책</span></div>
+          <div class="stat"><b>1</b><span data-en="Maker">만드는 사람</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="process reveal">
+        <h3 class="process-title"><span class="eyebrow">HOW WE MAKE</span><span data-en="From idea to launch, all in-house">아이디어부터 출시까지, 직접 만들어요</span></h3>
+        <ol class="steps">
+          <li><b>01</b><h4 data-en="Idea">아이디어</h4><p data-en="Start from what sounds fun, then test it with quick prototypes.">재미있겠다 싶은 것에서 출발해 작은 프로토타입으로 먼저 확인해요.</p></li>
+          <li><b>02</b><h4 data-en="Plan &amp; design">기획 · 설계</h4><p data-en="Shape the rules, screens, circuits or chapters before building.">규칙과 화면, 회로나 목차를 먼저 설계해요.</p></li>
+          <li><b>03</b><h4 data-en="Build">개발 · 제작</h4><p data-en="Code, art, hardware and writing — made and tested by hand.">코드, 그림, 하드웨어, 글까지 직접 만들고 시험해요.</p></li>
+          <li><b>04</b><h4 data-en="Launch &amp; care">출시 · 운영</h4><p data-en="Release on stores and bookshops, then keep improving with feedback.">스토어와 서점에 내놓고, 의견을 들으며 계속 다듬어요.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
   <!-- SUPPORT -->
   <section id="support">
     <div class="wrap support">
       <div>
-        <div class="head reveal" style="text-align:left;margin:0 0 30px">
-          <span class="chip">SUPPORT</span>
+        <div class="head reveal" style="margin-bottom:28px">
+          <span class="eyebrow">SUPPORT</span>
           <h2 data-en="FAQ">자주 묻는 질문</h2>
         </div>
         <div class="faq reveal" id="faq"></div>
       </div>
       <aside class="contact reveal">
-        <img src="images/cat.png" alt="">
+        <img src="images/cat.png" alt="" width="700" height="461" loading="lazy">
         <h3 data-en="Contact us">문의하기</h3>
         <p data-en="Bug reports, purchase issues and partnership proposals are all welcome. We reply within 2–3 business days.">버그 제보, 결제 문의, 제휴 제안 모두 환영해요. 영업일 기준 2~3일 안에 답변드려요.</p>
         <ul class="clist">
-          <li><a href="mailto:contact@dyodyodyo.com"><b>✉️</b>contact@dyodyodyo.com</a></li>
-          <li><a href="https://www.instagram.com/dyodyodyo_games/" target="_blank" rel="noopener"><b>📷</b>@dyodyodyo_games</a></li>
+          <li><a href="mailto:contact@dyodyodyo.com"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>contact@dyodyodyo.com</a></li>
+          <li><a href="https://www.instagram.com/dyodyodyo_games/" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>@dyodyodyo_games</a></li>
         </ul>
-        <a href="privacy.html" class="btn btn-navy" style="width:100%;justify-content:center" data-en="Privacy Policy">개인정보처리방침</a>
+        <a href="privacy.html" class="btn btn-yellow" style="width:100%" data-en="Privacy Policy">개인정보처리방침</a>
       </aside>
     </div>
   </section>
@@ -338,11 +507,12 @@
 <footer>
   <div class="wrap">
     <div class="ftop">
-      <a href="#top" class="brand"><img src="images/mark.png" alt="">됴됴됴</a>
-      <nav class="flinks">
-        <a href="#about" data-en="About">회사소개</a>
+      <a href="#top" class="brand"><img src="images/mark.png" alt="" width="40" height="40">DYODYODYO <small>됴됴됴</small></a>
+      <nav class="flinks" aria-label="바닥 메뉴">
         <a href="#business" data-en="What we do">사업분야</a>
         <a href="#games" data-en="Games">게임</a>
+        <a href="#contents" data-en="Contents">콘텐츠</a>
+        <a href="#about" data-en="About">회사소개</a>
         <a href="#support" data-en="Contact">문의</a>
         <a href="privacy.html" data-en="Privacy Policy">개인정보처리방침</a>
       </nav>
@@ -356,7 +526,7 @@
       <span><span data-en="Address">주소</span> : <span data-en="#1176, 62 Saemal-ro, Songpa-gu, Seoul, Republic of Korea">서울특별시 송파구 새말로 62, 1176호</span></span>
       <span><span data-en="Email">이메일</span> : contact@dyodyodyo.com</span>
     </div>
-    <div class="copy">© <span id="yr"></span> DYODYODYO. All rights reserved.</div>
+    <div class="copy">© <span id="yr">2026</span> DYODYODYO. Ideas into Reality.</div>
   </div>
 </footer>
 
@@ -365,42 +535,83 @@
    ▼ 게임 목록 — 이 배열만 고치면 카드가 바뀝니다.
    status : "live"(출시) | "soon"(출시 예정) | "dev"(개발 중)
    icon   : 아이콘 이미지 주소 (없으면 "" → emoji 사용)
+   play   : 플레이스토어 주소 (없으면 "" → '곧 출시' 표시)
+   features : '자세히 보기'에 나오는 특징 목록 (선택)
+   privacy  : 게임별 개인정보처리방침 주소 (선택)
+   badge    : 상태 배지 글자를 따로 정할 때 {ko,en} (선택, 예: 해외 출시)
+   note     : 스토어 버튼 아래 안내 문구 {ko,en} (선택)
+   preview  : 마우스를 올리면 넘어가는 스크린샷 {ko:[...], en:[...]} (선택)
+   video    : 플레이 영상 {ko:"videos/...mp4", en:"..."} — 있으면 preview 대신 영상 재생 (세로 360×640, 소리 포함)
+   poster   : 영상 첫 장면 그림 {ko,en} (선택)
+   ※ 실제로 출시된 게임만 "live"로 바꿔 주세요.
    ========================================================= */
+const shots=(id,lang,n)=>Array.from({length:n},(_,i)=>`images/preview/${id}/${lang}_${i+1}.webp`);
 const GAMES = [
   { title:{ko:"도트 좀비: 10분 생존", en:"Dot Zombies: 10-Min Survival"},
     genre:{ko:"픽셀 생존 액션", en:"Pixel survival action"},
     desc:{ko:"헬기에서 좀비 속으로 낙하! 무기를 합체하며 10분을 버티는 도트 생존 액션.",
           en:"Parachute into the horde! Fuse weapons and survive 10 minutes in pixel action."},
     status:"live", emoji:"🧟",
-    icon:"https://play-lh.googleusercontent.com/pcsb/AEecphYMSrjLBe37luEbs__5ohg3WPQqMZzMtbjbxfcS91Qq84zY1dsGtQWDYwFc548WGwDyS-K-H2KaRw_UEsag3BeW4LU5qQ=s256",
-    play:"https://play.google.com/store/apps/details?id=ymh.dotzombies" },
+    icon:"images/games/dotzombies.webp",
+    play:"https://play.google.com/store/apps/details?id=ymh.dotzombies",
+    features:{ko:["헬기에서 낙하해 몰려오는 좀비를 상대하는 생존 액션","같은 무기를 합체해 더 강한 무기로","Google Play 게임즈 로그인 시 진행 기록 클라우드 저장"],
+              en:["Survival action against endless zombie hordes","Fuse matching weapons into stronger ones","Progress saved to the cloud with Google Play Games"]},
+    privacy:"privacy/dotzombies.html",
+    preview:{ko:shots("dotzombies","ko",4), en:shots("dotzombies","en",4)},
+    video:{ko:"videos/dotzombies_ko.mp4", en:"videos/dotzombies_en.mp4"},
+    poster:{ko:"videos/dotzombies_ko_poster.jpg", en:"videos/dotzombies_en_poster.jpg"} },
   { title:{ko:"A Glass of Time: Bartender", en:"A Glass of Time: Bartender"},
     genre:{ko:"픽셀 바텐더 타이쿤", en:"Pixel bartender tycoon"},
     desc:{ko:"주문을 받고, 따르고, 흔들고, 내어 주세요. 픽셀 아트 바텐더 타이쿤.",
           en:"Take orders, pour, shake and serve in a pixel-art bartender tycoon."},
     status:"live", emoji:"🍸",
-    icon:"https://play-lh.googleusercontent.com/5P3x8rNCbSGSa0eRpie4kdR01ElvcnQ8yMm5AxH09oPyUaFaj_RPUP5SMjOSWey5wFk86sB9D2O1G-1wmsJ1Df8=s256",
-    play:"https://play.google.com/store/apps/details?id=ymh.hanjan" },
-  { title:{ko:"다음 게임", en:"Next game"},
-    genre:{ko:"개발 중", en:"In development"},
-    desc:{ko:"새로운 게임을 열심히 만들고 있어요. 소식은 인스타그램에서 가장 먼저!",
-          en:"Something new is on the way. Follow us on Instagram to hear first!"},
-    status:"dev", emoji:"✨", icon:"", play:"" }
+    icon:"images/games/hanjan.webp",
+    play:"https://play.google.com/store/apps/details?id=ymh.hanjan",
+    badge:{ko:"해외 출시", en:"Out now"},
+    note:{ko:"국내 Google Play에는 출시되지 않았어요. 해외 스토어에서만 받을 수 있어요.", en:""},
+    privacy:"privacy/hanjan.html",
+    video:{ko:"videos/hanjan_ko.mp4", en:"videos/hanjan_en.mp4"},
+    poster:{ko:"videos/hanjan_ko_poster.jpg", en:"videos/hanjan_en_poster.jpg"} },
+  { title:{ko:"별 셋 수비대", en:"Three Star Guard"},
+    genre:{ko:"전략 디펜스", en:"Strategy defense"},
+    desc:{ko:"귀여운 영웅을 모아 합치고 배치해 몰려오는 몬스터를 막는 전략 디펜스 게임!",
+          en:"Collect cute heroes, merge them and hold back waves of monsters!"},
+    status:"soon", emoji:"⭐",
+    icon:"images/games/threestarguard.webp",
+    play:"",
+    features:{ko:["같은 영웅 셋을 합쳐 ★2, ★3으로 승급","원소·직업 시너지로 나만의 덱 완성","10개 챕터 100 스테이지, 무한 모드와 일일 도전"],
+              en:["Merge three of the same hero into ★2 and ★3","Build your deck with element and class synergies","10 chapters, 100 stages, plus Endless mode and Daily Challenges"]},
+    preview:{ko:shots("threestarguard","ko",4), en:shots("threestarguard","en",4)},
+    video:{ko:"videos/threestarguard_ko.mp4", en:"videos/threestarguard_en.mp4"},
+    poster:{ko:"videos/threestarguard_ko_poster.jpg", en:"videos/threestarguard_en_poster.jpg"} },
+  { title:{ko:"한 줄 용병단", en:"Line Mercs"},
+    genre:{ko:"전략 자동 전투 로그라이트", en:"Strategy auto-battle roguelite"},
+    desc:{ko:"용병을 한 줄로 세우고 순서를 바꿔 싸우는 전략 자동 전투 로그라이트!",
+          en:"Line up your mercenaries, swap their order mid-fight, and win the auto-battle!"},
+    status:"soon", emoji:"⚔️",
+    icon:"images/games/linemercs.webp",
+    play:"",
+    features:{ko:["10종 용병, 1~4번 자리마다 다른 기술","전투 중 카드를 끌어 자리 바꾸기","12개 지역 41장, 매 판 달라지는 유물과 던전"],
+              en:["10 mercenary classes with a different skill in each slot","Drag cards to swap positions mid-battle","41 chapters across 12 regions, new relics and paths every run"]},
+    preview:{ko:shots("linemercs","ko",4), en:shots("linemercs","ko",4)},
+    video:{ko:"videos/linemercs_ko.mp4", en:"videos/linemercs_en.mp4"},
+    poster:{ko:"videos/linemercs_ko_poster.jpg", en:"videos/linemercs_en_poster.jpg"} }
 ];
 
-/* ▼ 책·콘텐츠 목록 */
+/* ▼ 책·콘텐츠 목록 (cover: 표지 이미지, 없으면 emoji / preview: 마우스를 올리면 넘어가는 북카드) */
+const pages=(id,n)=>Array.from({length:n},(_,i)=>`images/preview/books/${id}_${i+1}.webp`);
 const CONTENTS = [
   { kind:{ko:"도서",en:"Book"}, title:{ko:"홈 칵테일, 한 잔의 시간",en:"Home Cocktails: A Glass of Time"},
     desc:{ko:"집에서 쉽게 만드는 칵테일 이야기. 조주기능사가 알려주는 홈 바 입문서.",en:"An easy guide to making cocktails at home, from a certified bartender."},
-    emoji:"🍹", color:"var(--pink-l)",
+    emoji:"🍹", color:"#E8EFE6", cover:"images/books/home-cocktail.webp", preview:pages("home-cocktail",5),
     link:"https://search.kyobobook.co.kr/search?keyword=%ED%99%88%20%EC%B9%B5%ED%85%8C%EC%9D%BC%20%ED%95%9C%20%EC%9E%94%EC%9D%98%20%EC%8B%9C%EA%B0%84" },
   { kind:{ko:"도서",en:"Book"}, title:{ko:"아... 분명 어제는 됐는데",en:"It Worked Yesterday..."},
     desc:{ko:"하드웨어 개발자의 웃픈 일상을 담은 글 모음. 개발자라면 무릎을 칠 100편.",en:"100 funny, painfully relatable short pieces about life as a hardware engineer."},
-    emoji:"🔌", color:"var(--sky-l)",
+    emoji:"🔌", color:"#E4E9F4", cover:"images/books/it-worked-yesterday.webp", preview:pages("it-worked-yesterday",5),
     link:"https://search.kyobobook.co.kr/search?keyword=%EC%95%84...%20%EB%B6%84%EB%AA%85%20%EC%96%B4%EC%A0%9C%EB%8A%94%20%EB%90%90%EB%8A%94%EB%8D%B0" },
   { kind:{ko:"이모티콘",en:"Emoticons"}, title:{ko:"하드웨어 개발자 일상",en:"Hardware Dev Life"},
     desc:{ko:"개발자의 하루를 담은 메신저 이모티콘을 준비하고 있어요.",en:"Messenger emoticons about a developer's day — coming soon."},
-    emoji:"💬", color:"var(--mint-l)", link:"" }
+    emoji:"💬", color:"var(--yellow-soft)", cover:"", link:"" }
 ];
 
 const FAQ = [
@@ -411,47 +622,141 @@ const FAQ = [
   {q:{ko:"결제했는데 아이템이 들어오지 않았어요.",en:"I paid but didn't receive my item."},
    a:{ko:"게임을 완전히 종료한 뒤 다시 실행해 보세요. 그래도 안 되면 결제 영수증(주문 번호)과 함께 이메일로 문의해 주세요.",en:"Fully close and restart the game. If it still doesn't appear, email us with your receipt (order number)."}},
   {q:{ko:"버그는 어떻게 제보하나요?",en:"How do I report a bug?"},
-   a:{ko:"게임 이름, 기기 모델, 발생 상황을 적어 이메일로 보내주세요. 스크린샷이나 영상이 있으면 더 빨리 고칠 수 있어요.",en:"Email us the game name, your device model and what happened. Screenshots or videos help a lot."}}
+   a:{ko:"게임 이름, 기기 모델, 발생 상황을 적어 이메일로 보내주세요. 스크린샷이나 영상이 있으면 더 빨리 고칠 수 있어요.",en:"Email us the game name, your device model and what happened. Screenshots or videos help a lot."}},
+  {q:{ko:"제휴나 협업은 어떻게 제안하나요?",en:"How can I propose a partnership or collaboration?"},
+   a:{ko:"게임·콘텐츠 협업, 광고·마케팅 제휴 등 제안은 contact@dyodyodyo.com으로 보내 주세요. 회사(또는 이름), 제안 내용, 희망 일정을 함께 적어 주시면 검토 후 영업일 기준 2~3일 안에 답변드려요.",en:"Send game or content collaborations, ad and marketing partnerships and other proposals to contact@dyodyodyo.com. Include your company (or name), the proposal and your timeline, and we'll reply within 2–3 business days."}},
+  {q:{ko:"개발 관련 문의도 받나요?",en:"Do you take development inquiries?"},
+   a:{ko:"게임, 앱, 하드웨어 개발과 관련된 문의도 이메일로 받고 있어요. 원하는 내용과 일정을 적어 보내 주시면 진행할 수 있는지 검토해 답변드려요.",en:"Yes, we welcome inquiries about game, app and hardware development by email. Tell us what you need and your timeline, and we'll review it and let you know whether we can help."}}
 ];
 
 let lang="ko";
 try{ lang = localStorage.getItem("dyo_lang") || ((navigator.language||"ko").startsWith("ko") ? "ko" : "en"); }catch(e){}
-const ST={ko:{live:"출시",soon:"출시 예정",dev:"개발 중",play:"Google Play에서 보기",none:"곧 공개",more:"교보문고에서 보기 →",ready:"준비 중"},
-          en:{live:"Out now",soon:"Coming soon",dev:"In development",play:"Get it on Google Play",none:"Coming soon",more:"View on Kyobo →",ready:"Coming soon"}};
+const ST={ko:{live:"출시",soon:"출시 예정",dev:"개발 중",play:"Google Play에서 보기",none:"곧 출시",more:"교보문고에서 보기 →",ready:"준비 중",menuOpen:"메뉴 열기",menuClose:"메뉴 닫기",langLabel:"Switch to English",detail:"자세히 보기",gpriv:"이 게임의 개인정보처리방침",pv:"미리보기",pvGame:"게임 화면 미리보기",pvBook:"책 내용 미리보기",sndOff:"🔇 소리 켜기",sndOn:"🔊 소리 끄기",vtag:"플레이 영상"},
+          en:{live:"Out now",soon:"Coming soon",dev:"In development",play:"Get it on Google Play",none:"Coming soon",more:"View on Kyobo →",ready:"Coming soon",menuOpen:"Open menu",menuClose:"Close menu",langLabel:"한국어로 보기",detail:"Details",gpriv:"Privacy policy for this game",pv:"Preview",pvGame:"Gameplay preview",pvBook:"Book preview",sndOff:"🔇 Sound on",sndOn:"🔊 Sound off",vtag:"Gameplay video"}};
+const ORDER={live:0,soon:1,dev:2};
 
 document.querySelectorAll("[data-en]").forEach(n=>n.dataset.ko=n.innerHTML);
+document.querySelectorAll("[data-en-alt]").forEach(n=>n.dataset.koAlt=n.alt);
 
+function iconHtml(g,lang){
+  return g.icon
+    ? `<img class="gi" src="${g.icon}" alt="${g.title[lang]}${lang==="ko"?" 아이콘":" icon"}" width="112" height="112" loading="lazy" onerror="this.outerHTML='<div class=&quot;gi&quot; aria-hidden=&quot;true&quot;>${g.emoji}</div>'">`
+    : `<div class="gi" aria-hidden="true">${g.emoji}</div>`;
+}
+/* 미리보기: 영상이 있으면 영상, 없으면 그림을 차례로 넘김 */
+function pvHtml(item,kind){
+  const t=ST[lang];
+  const v=item.video&&(item.video[lang]||item.video.ko);
+  const imgs=Array.isArray(item.preview)?item.preview:(item.preview&&(item.preview[lang]||item.preview.ko));
+  if(!v&&!(imgs&&imgs.length))return "";
+  const label=kind==="game"?t.pvGame:t.pvBook;
+  const poster=(item.poster&&(item.poster[lang]||item.poster.ko))||(imgs&&imgs[0]);
+  const inner=v
+    ? `<video muted loop playsinline preload="none" ${poster?`poster="${poster}"`:""}><source src="${v}" type="video/mp4"></video>`
+    : imgs.map((s,i)=>`<img ${i?"":`class="on" `}data-src="${s}" alt="">`).join("");
+  return `<div class="pv pv-${kind}" role="img" aria-label="${label}">${inner}</div>`;
+}
+function pvBtn(){return `<button type="button" class="pvbtn" aria-expanded="false">▶ ${ST[lang].pv}</button>`}
+const canHover=matchMedia("(hover:hover) and (pointer:fine)").matches;
+/* 게임 영상 소리: 버튼을 한 번 눌러야 켜짐(브라우저가 누르기 전 소리 재생을 막음) */
+let soundOn=false;
+function setSound(on){
+  soundOn=on;const b=document.getElementById("sndBtn");if(!b)return;
+  b.setAttribute("aria-pressed",on);b.textContent=on?ST[lang].sndOn:ST[lang].sndOff;
+  document.querySelectorAll(".pv video").forEach(v=>{if(!v.paused)v.muted=!on;});
+}
+const lessMotion=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function startPv(card){
+  const pv=card.querySelector(".pv"); if(!pv)return;
+  pv.querySelectorAll("img[data-src]").forEach(i=>{i.src=i.dataset.src;i.removeAttribute("data-src")});
+  const v=pv.querySelector("video");
+  if(v){
+    v.currentTime=0;v.muted=!soundOn;
+    v.play().catch(()=>{v.muted=true;v.play().catch(()=>{})});
+    return;
+  }
+  const imgs=[...pv.querySelectorAll("img")]; if(imgs.length<2||lessMotion)return;
+  clearInterval(card._pv); let k=imgs.findIndex(i=>i.classList.contains("on")); if(k<0)k=0;
+  card._pv=setInterval(()=>{imgs[k].classList.remove("on");k=(k+1)%imgs.length;imgs[k].classList.add("on")},1100);
+}
+function stopPv(card){clearInterval(card._pv);const v=card.querySelector(".pv video");if(v)v.pause()}
+function bindPv(){
+  document.querySelectorAll(".game,.ct").forEach(card=>{
+    if(!card.querySelector(".pv"))return;
+    if(canHover){
+      card.addEventListener("mouseenter",()=>{card.classList.add("pv-show");startPv(card)});
+      card.addEventListener("mouseleave",()=>{if(!card.classList.contains("pv-on")){card.classList.remove("pv-show");stopPv(card)}});
+    }
+    const b=card.querySelector(".pvbtn");
+    if(b)b.addEventListener("click",()=>{
+      const on=!card.classList.contains("pv-on");
+      card.classList.toggle("pv-on",on);card.classList.toggle("pv-show",on);b.setAttribute("aria-expanded",on);
+      on?startPv(card):stopPv(card);
+    });
+  });
+}
 function render(){
   const t=ST[lang];
-  document.getElementById("gameList").innerHTML=GAMES.map(g=>`
+  document.querySelectorAll(".game,.ct").forEach(stopPv);
+  const list=[...GAMES].sort((a,b)=>(ORDER[a.status]??9)-(ORDER[b.status]??9));
+  document.getElementById("gameList").innerHTML=list.map(g=>`
     <article class="game reveal in">
-      <div class="game-top">${g.icon?`<img src="${g.icon}" alt="${g.title[lang]}" loading="lazy">`:`<div class="ph">${g.emoji}</div>`}
-        <div><span class="badge ${g.status}">${t[g.status]}</span><h3>${g.title[lang]}</h3></div></div>
-      <div class="game-body"><div class="genre">${g.genre[lang]}</div><p>${g.desc[lang]}</p>
-        <div class="stores">${g.play?`<a href="${g.play}" target="_blank" rel="noopener">▶ ${t.play}</a>`:`<span>${t.none}</span>`}</div></div>
+      ${iconHtml(g,lang)}
+      <div><span class="badge ${g.status}">${(g.badge&&g.badge[lang])||t[g.status]}</span>${g.video?` <span class="vtag">▶ ${t.vtag}</span>`:""}<h3>${g.title[lang]}</h3>
+        <div class="genre">${g.genre[lang]}</div><p>${g.desc[lang]}</p>
+        <div class="stores">${g.play?`<a href="${g.play}" target="_blank" rel="noopener">▶ ${t.play}</a>`:`<span>${t.none}</span>`}${pvHtml(g,"game")?pvBtn():""}</div>
+        ${g.note&&g.note[lang]?`<p class="gnote">${g.note[lang]}</p>`:""}
+        ${pvHtml(g,"game")}
+        ${(g.features||g.privacy)?`<details class="gmore"><summary>${t.detail}</summary>
+          ${g.features?`<ul>${g.features[lang].map(f=>`<li>${f}</li>`).join("")}</ul>`:""}
+          ${g.privacy?`<a class="plink" href="${g.privacy}${lang==="en"?"?lang=en":""}">${t.gpriv} →</a>`:""}
+        </details>`:""}</div>
     </article>`).join("");
   document.getElementById("contentList").innerHTML=CONTENTS.map(c=>`
-    <article class="ct reveal in"><div class="cover" style="background:${c.color}">${c.emoji}</div>
-      <div class="kind">${c.kind[lang]}</div><h3>${c.title[lang]}</h3><p>${c.desc[lang]}</p>
-      ${c.link?`<a class="more" href="${c.link}" target="_blank" rel="noopener">${t.more}</a>`:`<span class="more">${t.ready}</span>`}</article>`).join("");
+    <article class="ct reveal in"><div class="cover" style="background:${c.color}">${c.cover?`<img src="${c.cover}" alt="${c.title[lang]}${lang==="ko"?" 표지":" cover"}" loading="lazy">`:`<span aria-hidden="true">${c.emoji}</span>`}</div>
+      <div class="body"><div class="kind">${c.kind[lang]}</div><h3>${c.title[lang]}</h3><p>${c.desc[lang]}</p>
+      <div class="ctact">${c.link?`<a class="more" href="${c.link}" target="_blank" rel="noopener">${t.more}</a>`:`<span class="more">${t.ready}</span>`}${pvHtml(c,"book")?pvBtn():""}</div></div>
+      ${pvHtml(c,"book")}</article>`).join("");
   document.getElementById("faq").innerHTML=FAQ.map(f=>`<details><summary>${f.q[lang]}</summary><p>${f.a[lang]}</p></details>`).join("");
   document.getElementById("gameCount").textContent=GAMES.filter(g=>g.status==="live").length;
+  document.getElementById("soonCount").textContent=GAMES.filter(g=>g.status==="soon").length;
+  bindPv();
+  setSound(soundOn);
 }
+/* 소리 켜기 버튼은 뺐음(2026-11-27): 영상은 항상 소리 없이. 다시 넣으려면 게임 제목 아래에
+   <button type="button" class="sndbtn" id="sndBtn" aria-pressed="false">🔇 소리 켜기</button> 를 넣고 아래 줄의 주석을 푼다.
+document.getElementById("sndBtn").addEventListener("click",()=>setSound(!soundOn)); */
+const burger=document.getElementById("burger");
 function applyLang(){
   document.documentElement.lang=lang;
   document.querySelectorAll("[data-en]").forEach(n=>n.innerHTML=lang==="en"?n.dataset.en:n.dataset.ko);
-  document.getElementById("langBtn").textContent=lang==="ko"?"EN":"한국어";
+  document.querySelectorAll("[data-en-alt]").forEach(n=>n.alt=lang==="en"?n.dataset.enAlt:n.dataset.koAlt);
+  const b=document.getElementById("langBtn");
+  b.textContent=lang==="ko"?"EN":"한국어";
+  b.setAttribute("aria-label",ST[lang].langLabel);
+  burger.setAttribute("aria-label",burger.getAttribute("aria-expanded")==="true"?ST[lang].menuClose:ST[lang].menuOpen);
   render();
   try{localStorage.setItem("dyo_lang",lang)}catch(e){}
 }
 document.getElementById("langBtn").onclick=()=>{lang=lang==="ko"?"en":"ko";applyLang()};
 const menu=document.getElementById("menu");
-document.getElementById("burger").onclick=()=>menu.classList.toggle("open");
-menu.querySelectorAll("a").forEach(a=>a.onclick=()=>menu.classList.remove("open"));
+function setMenu(open){
+  menu.classList.toggle("open",open);
+  document.documentElement.classList.toggle("menu-open",open);
+  burger.setAttribute("aria-expanded",open);
+  burger.setAttribute("aria-label",open?ST[lang].menuClose:ST[lang].menuOpen);
+}
+burger.onclick=()=>setMenu(!menu.classList.contains("open"));
+menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>setMenu(false)));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&menu.classList.contains("open")){setMenu(false);burger.focus()}});
+document.addEventListener("click",e=>{if(menu.classList.contains("open")&&!e.target.closest(".nav-in"))setMenu(false)});
+matchMedia("(min-width:901px)").addEventListener("change",e=>{if(e.matches)setMenu(false)});
 document.getElementById("yr").textContent=new Date().getFullYear();
 applyLang();
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
-document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+if("IntersectionObserver" in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.08,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll(".reveal:not(.in)").forEach(el=>io.observe(el));
+}else{document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in"))}
 </script>
 </body>
 </html>
