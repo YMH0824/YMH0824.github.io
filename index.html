@@ -177,13 +177,13 @@
   .biz .ic svg{width:30px;height:30px}
   .biz .label{font-family:var(--round);font-weight:700;font-size:15px;letter-spacing:.12em;color:var(--muted);margin-bottom:2px}
   .biz h3{font-size:23px;margin-bottom:10px}
-  .biz p{font-size:15.5px;margin-bottom:16px}
-  .biz ul{list-style:none;display:grid;gap:6px;margin-top:auto}
+  .biz p{font-size:15.5px;margin-bottom:16px;min-height:calc(1.7em * 3)}   /* 설명을 3줄 높이로 맞춰 목록이 같은 높이에서 시작 */
+  .biz ul{list-style:none;display:grid;gap:6px;align-content:start}
   .biz li{font-weight:600;font-size:15px;color:var(--ink);display:flex;gap:8px;align-items:flex-start}
   .biz li::before{content:"";flex:none;width:7px;height:7px;border-radius:2px;background:var(--yellow);border:1.5px solid var(--navy);margin-top:9px}
   .biz.hl{background:var(--yellow-soft)}
   @media (max-width:1040px){.biz-grid{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:600px){.biz-grid{grid-template-columns:1fr}}
+  @media (max-width:600px){.biz-grid{grid-template-columns:1fr}.biz p{min-height:0}}
 
   /* Games */
   #games{background:var(--navy);color:#C9D1E3}
