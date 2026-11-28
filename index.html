@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>됴됴됴 DYODYODYO | Ideas into Reality</title>
-<meta name="description" content="됴됴됴(DYODYODYO)는 게임, 소프트웨어, 하드웨어, 콘텐츠를 만드는 1인 크리에이티브 스튜디오입니다. 재미있는 걸 꾸준히 만듭니다.">
+<title>됴됴됴 DYODYODYO | 아이디어를 현실로 만드는 스튜디오</title>
+<meta name="description" content="게임, 소프트웨어, 하드웨어를 직접 기획하고 개발하는 독립 크리에이티브 스튜디오 됴됴됴(DYODYODYO). 재미있는 걸 꾸준히 만듭니다.">
 <meta name="theme-color" content="#07152E">
 <link rel="canonical" href="https://dyodyodyo.com/">
 <meta property="og:type" content="website">
@@ -133,7 +133,10 @@
   .hero-text{padding-bottom:96px}
   .tag{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px;color:#fff;margin-bottom:22px}
   .tag i{width:8px;height:8px;border-radius:50%;background:var(--yellow);display:block}
-  .slogan{font-family:var(--round);font-weight:700;font-size:clamp(46px,6.8vw,84px);line-height:1.02;color:#fff;letter-spacing:-.01em;margin-bottom:18px}
+  .slogan{font-weight:800;font-size:clamp(36px,5vw,62px);line-height:1.18;color:#fff;letter-spacing:-.03em;margin-bottom:20px;word-break:keep-all}
+  html[lang=en] .slogan{font-family:var(--round);font-weight:700;letter-spacing:-.01em;line-height:1.08}
+  .hero .desc{color:#DDE3EE}
+  .hero .sub2{font-weight:800;font-size:16px;color:var(--yellow);margin:-16px 0 28px}
   .slogan em{font-style:normal;color:var(--yellow)}
   .hero .sub{font-size:clamp(22px,2.6vw,30px);font-weight:800;color:#fff;margin-bottom:14px;letter-spacing:-.02em}
   .hero .desc{font-size:clamp(16px,1.6vw,18px);max-width:520px;margin-bottom:32px}
@@ -170,7 +173,7 @@
 
   /* Business */
   #business{background:#fff;border-bottom:1px solid var(--line)}
-  .biz-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .biz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .biz{background:var(--bg);border:2px solid var(--navy);border-radius:var(--r-lg);padding:28px 24px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
   .biz:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
   .biz .ic{width:58px;height:58px;border-radius:18px;background:var(--navy);color:var(--yellow);display:grid;place-items:center;margin-bottom:20px}
@@ -182,8 +185,14 @@
   .biz li{font-weight:600;font-size:15px;color:var(--ink);display:flex;gap:8px;align-items:flex-start}
   .biz li::before{content:"";flex:none;width:7px;height:7px;border-radius:2px;background:var(--yellow);border:1.5px solid var(--navy);margin-top:9px}
   .biz.hl{background:var(--yellow-soft)}
-  @media (max-width:1040px){.biz-grid{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:600px){.biz-grid{grid-template-columns:1fr}.biz p{min-height:0}}
+  .biz ul{flex:1}
+  .bizlink{align-self:flex-start;margin-top:18px;font-weight:800;font-size:15px;color:var(--navy);border-bottom:3px solid var(--yellow);padding:2px 0;text-decoration:none}
+  .bizlink:hover{border-color:var(--navy)}
+  .bizsub{display:flex;align-items:center;gap:6px 14px;flex-wrap:wrap;margin-top:16px;border:1.5px dashed #C9CFDB;border-radius:var(--r);padding:12px 20px;color:var(--muted);font-size:15px;text-decoration:none}
+  .bizsub .label{font-family:var(--round);font-weight:700;font-size:14px;letter-spacing:.12em}
+  .bizsub b{margin-left:auto;color:var(--navy);font-size:14px}
+  .bizsub:hover{border-color:var(--navy)}
+  @media (max-width:900px){.biz-grid{grid-template-columns:1fr}.biz p{min-height:0}}
 
   /* Games */
   #games{background:var(--navy);color:#C9D1E3}
@@ -195,10 +204,11 @@
   .badge{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:14px;padding:3px 11px;border-radius:999px;border:1.5px solid var(--navy);color:var(--navy);margin-bottom:8px}
   .badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
   .badge.live{background:#D8F5E6;color:#0B5B36;border-color:#0B5B36}
-  .badge.soon{background:var(--yellow);color:var(--navy)}
+  .badge.soon{background:#fff;color:#5D6679;border-color:#A8B0C0}
   .badge.dev{background:#E4E9F4;color:var(--navy)}
   .game h3{font-size:22px;margin-bottom:2px}
   .game .genre{font-weight:700;font-size:14px;color:var(--muted);margin-bottom:8px}
+  .game .genre b{font-family:var(--round);letter-spacing:.08em;color:var(--navy)}
   .game p{font-size:15.5px;color:var(--body);margin-bottom:16px}
   .stores{display:flex;gap:8px;flex-wrap:wrap}
   .stores a,.stores span{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:14.5px;padding:10px 16px;min-height:44px;border-radius:999px;border:2px solid var(--navy);color:var(--navy);background:var(--yellow)}
@@ -246,6 +256,7 @@
   @media (max-width:900px){.games{grid-template-columns:1fr}}
   @media (max-width:480px){.game{grid-template-columns:72px 1fr;gap:14px;padding:20px 18px}.game .gi{width:72px;height:72px;border-radius:18px;font-size:32px}}
 
+  .fslogan{font-weight:700;font-size:15px;color:#C9D1E3;margin:18px 0 6px}
   /* 그 밖에 만든 것 (책·이모티콘, 작게) */
   .extras{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;font-size:14px;color:var(--muted)}
   .extras .xlabel{font-weight:800}
@@ -262,14 +273,13 @@
   .about-logo{border-radius:var(--r-lg);overflow:hidden;border:2px solid var(--navy);box-shadow:var(--shadow);max-width:420px}
   .about h2{font-size:clamp(30px,3.8vw,42px);margin-bottom:16px}
   .about p{font-size:17px;margin-bottom:12px}
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
   .stat{border:2px solid var(--navy);border-radius:var(--r);padding:16px 14px;background:var(--bg)}
   .stat b{display:block;font-family:var(--round);font-size:36px;color:var(--navy);line-height:1.1;font-weight:700}
   .stat span{font-weight:700;font-size:14px;color:var(--muted)}
   .stat.s1{background:var(--yellow)}
   .stat.s1 span{color:var(--navy)}
   @media (max-width:900px){.about{grid-template-columns:1fr;gap:32px}.about-logo{max-width:260px}}
-  @media (max-width:520px){.stats{grid-template-columns:1fr 1fr}}
   .process{margin-top:72px;background:var(--navy);border-radius:var(--r-lg);padding:36px 32px;color:#C9D1E3}
   .process-title{display:flex;flex-direction:column;align-items:flex-start;gap:4px;color:#fff;font-size:clamp(22px,2.6vw,28px);margin-bottom:26px}
   .process-title .eyebrow{margin-bottom:6px}
@@ -327,7 +337,7 @@
     <div class="right">
       <ul class="menu" id="menu">
         <li><a href="#business" data-en="What we do">사업분야</a></li>
-        <li><a href="#games" data-en="Games">게임</a></li>
+        <li><a href="#games" data-en="Projects">프로젝트</a></li>
         <li><a href="#about" data-en="About">회사소개</a></li>
         <li><a href="#support" data-en="Contact">문의</a></li>
       </ul>
@@ -342,15 +352,15 @@
   <section class="hero on-dark" style="padding-bottom:0" id="main">
     <div class="wrap">
       <div class="hero-text">
-        <span class="tag"><i></i><span data-en="A Studio That Turns Ideas into Reality.">아이디어를 현실로 만드는 스튜디오</span></span>
-        <h1 class="slogan">Ideas into<br><em>Reality.</em></h1>
-        <p class="sub" data-en="We keep making fun things.">재미있는 걸 꾸준히 만듭니다.</p>
-        <p class="desc" data-en="DYODYODYO is a small studio that turns ideas into games, software, hardware and content — from planning to launch.">됴됴됴는 떠오른 아이디어를 게임, 소프트웨어, 하드웨어, 콘텐츠로 직접 만들어 세상에 내놓는 작은 스튜디오예요.</p>
+        <span class="tag"><i></i><span>Independent Creative Studio</span></span>
+        <h1 class="slogan" data-en="A Studio That Turns<br><em>Ideas into Reality.</em>">아이디어를<br><em>현실로</em> 만드는 스튜디오.</h1>
+        <p class="desc" data-en="Games, software and hardware — we plan and build the ideas we come up with, and make them real.">게임, 소프트웨어, 하드웨어까지. 떠오른 아이디어를 직접 기획하고 개발하며 현실로 만듭니다.</p>
+        <p class="sub2" data-en="We keep making fun things.">재미있는 걸 꾸준히 만듭니다.</p>
         <div class="ctas">
-          <a href="#games" class="btn btn-yellow" data-en="See our games →">게임 보러 가기 →</a>
-          <a href="#support" class="btn btn-white" data-en="Contact us">문의하기</a>
+          <a href="#games" class="btn btn-yellow" data-en="See projects →">프로젝트 보기 →</a>
+          <a href="#about" class="btn btn-white" data-en="About the studio">스튜디오 소개</a>
         </div>
-        <ul class="areas" aria-label="사업 분야"><li>GAME</li><li>SOFTWARE</li><li>HARDWARE</li><li>CONTENTS</li></ul>
+        <ul class="areas" aria-label="사업 분야"><li>GAME</li><li>SOFTWARE</li><li>HARDWARE</li></ul>
       </div>
       <div class="hero-cat">
         <div class="bubble" data-en="New Idea Discovered ✨💡">새로운 아이디어 발견 ✨💡</div>
@@ -365,11 +375,11 @@
     <div class="wrap">
       <div class="head reveal">
         <span class="eyebrow">WHAT WE DO</span>
-        <h2 data-en="Four things we make">이런 걸 만들어요</h2>
-        <p data-en="From code to circuits to books — we build what we find interesting, end to end.">코드부터 회로, 책까지. 재미있겠다 싶은 건 기획부터 출시까지 직접 만듭니다.</p>
+        <h2 data-en="Three things we build">세 가지를 직접 만듭니다</h2>
+        <p data-en="We plan, design and build ideas ourselves, and ship them as real, working things.">아이디어를 기획하고, 설계하고, 직접 개발해 결과물로 내놓아요.</p>
       </div>
       <div class="biz-grid">
-        <article class="biz hl reveal">
+        <article class="biz reveal">
           <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12a4 4 0 0 1 4 4v1a4 4 0 0 1-7 2.6L14 14h-4l-1 1.6A4 4 0 0 1 2 13v-1a4 4 0 0 1 4-4z"/><path d="M7 11v3M5.5 12.5h3"/><circle cx="16" cy="11.5" r=".6" fill="currentColor"/><circle cx="18" cy="13.5" r=".6" fill="currentColor"/></svg></div>
           <div class="label">GAME</div>
           <h3 data-en="Mobile games">모바일 게임</h3>
@@ -379,6 +389,7 @@
             <li data-en="Google Play releases">Google Play 출시</li>
             <li data-en="Multilingual live service">다국어 · 라이브 운영</li>
           </ul>
+          <a class="bizlink" href="#games" data-en="See our games →">게임 프로젝트 보기 →</a>
         </article>
         <article class="biz reveal">
           <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M9.5 13l-2 2 2 2M14.5 13l2 2-2 2"/></svg></div>
@@ -389,6 +400,7 @@
             <li data-en="Utility &amp; lifestyle apps">생활 · 유틸리티 앱</li>
             <li data-en="Developer tools">개발 도구</li>
           </ul>
+          <a class="bizlink" href="#support" data-en="Ask about software →">개발 문의하기 →</a>
         </article>
         <article class="biz reveal">
           <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 7V3M14 7V3M10 21v-4M14 21v-4M7 10H3M7 14H3M21 10h-4M21 14h-4"/></svg></div>
@@ -400,17 +412,10 @@
             <li data-en="FPGA">FPGA</li>
             <li data-en="Prototyping">시제품 제작</li>
           </ul>
-        </article>
-        <article class="biz reveal">
-          <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M9 8h7M9 11.5h5"/></svg></div>
-          <div class="label">CONTENTS</div>
-          <h3 data-en="Books &amp; content">출판 · 콘텐츠</h3>
-          <p data-en="Content to read, send and use — from books to emoticons.">읽고, 보내고, 쓰는 콘텐츠를 만들어요. 책부터 이모티콘까지.</p>
-          <ul>
-            <li data-en="Books (Kyobo POD)">도서 출판 (교보문고 POD)</li>
-            <li data-en="Messenger emoticons">메신저 이모티콘</li>          </ul>
+          <a class="bizlink" href="#support" data-en="Ask about hardware →">개발 문의하기 →</a>
         </article>
       </div>
+      <a class="bizsub reveal" href="#extras"><span class="label">CONTENTS</span><span data-en="Now and then we also make books and emoticons.">책과 이모티콘도 가끔 만들어요.</span><b data-en="See →">보기 →</b></a>
     </div>
   </section>
 
@@ -418,8 +423,8 @@
   <section id="games" class="on-dark">
     <div class="wrap">
       <div class="head reveal">
-        <span class="eyebrow">GAMES</span>
-        <h2 data-en="Our games">됴됴됴의 게임</h2>
+        <span class="eyebrow">PROJECTS</span>
+        <h2 data-en="What we've made">직접 만든 것들</h2>
         <p data-en="Hover over a card (or tap Preview) to see it in action. New games are on the way.">카드에 마우스를 올리면(폰은 미리보기) 플레이 화면이 나와요. 새 게임도 곧 나와요.</p>      </div>
       <div class="games" id="gameList"></div>
     </div>
@@ -432,12 +437,11 @@
       <div class="reveal">
         <span class="eyebrow">ABOUT</span>
         <h2 data-en="Small studio,<br>big curiosity">작은 회사,<br>큰 호기심</h2>
-        <p data-en="DYODYODYO is an independent creative studio run by a hardware engineer who loves making things. Games, apps, circuits, books — if it sounds fun, we build it.">됴됴됴는 만드는 걸 좋아하는 하드웨어 개발자가 운영하는 독립 크리에이티브 스튜디오예요. 게임, 앱, 회로, 책까지 — 재미있겠다 싶으면 일단 만들어 봅니다.</p>
-        <p data-en="Planning, development, design and launch are all done in-house, so ideas move fast and details get the attention they deserve.">기획부터 개발, 디자인, 출시까지 직접 하기 때문에 빠르게 움직이고, 작은 부분까지 꼼꼼하게 챙겨요.</p>
+        <p data-en="DYODYODYO is an independent creative studio that turns all kinds of ideas into real, finished work.">DYODYODYO는 다양한 아이디어를 실제 결과물로 만들어 가는 독립 크리에이티브 스튜디오입니다.</p>
+        <p data-en="We plan and build games, software and hardware ourselves, and explore new possibilities through all sorts of creative work. We keep turning fun ideas into reality.">게임과 소프트웨어, 하드웨어를 직접 기획하고 개발하며, 다양한 창작 활동을 통해 새로운 가능성을 탐색합니다. 재미있는 아이디어를 꾸준히 현실로 만듭니다.</p>
         <div class="stats">
           <div class="stat s1"><b id="gameCount">2</b><span data-en="Games out">출시한 게임</span></div>
           <div class="stat"><b id="soonCount">2</b><span data-en="Coming soon">출시 예정</span></div>
-          <div class="stat"><b>2</b><span data-en="Books">펴낸 책</span></div>
           <div class="stat"><b>1</b><span data-en="Maker">만드는 사람</span></div>
         </div>
       </div>
@@ -449,10 +453,10 @@
           <li><b>01</b><h4 data-en="Idea">아이디어</h4><p data-en="Start from what sounds fun, then test it with quick prototypes.">재미있겠다 싶은 것에서 출발해 작은 프로토타입으로 먼저 확인해요.</p></li>
           <li><b>02</b><h4 data-en="Plan &amp; design">기획 · 설계</h4><p data-en="Shape the rules, screens, circuits or chapters before building.">규칙과 화면, 회로나 목차를 먼저 설계해요.</p></li>
           <li><b>03</b><h4 data-en="Build">개발 · 제작</h4><p data-en="Code, art, hardware and writing — made and tested by hand.">코드, 그림, 하드웨어, 글까지 직접 만들고 시험해요.</p></li>
-          <li><b>04</b><h4 data-en="Launch &amp; care">출시 · 운영</h4><p data-en="Release on stores and bookshops, then keep improving with feedback.">스토어와 서점에 내놓고, 의견을 들으며 계속 다듬어요.</p></li>
+          <li><b>04</b><h4 data-en="Launch &amp; care">출시 · 운영</h4><p data-en="Release on the stores, then keep improving with feedback.">스토어에 내놓고, 의견을 들으며 계속 다듬어요.</p></li>
         </ol>
       </div>
-      <div class="extras reveal"><span class="xlabel" data-en="Also made">그 밖에 만든 것</span><ul id="contentList"></ul></div>
+      <div class="extras reveal" id="extras"><span class="xlabel" data-en="Also made">그 밖에 만든 것</span><ul id="contentList"></ul></div>
     </div>
   </section>
 
@@ -486,12 +490,13 @@
       <a href="#top" class="brand"><img src="images/mark.png" alt="" width="40" height="40">DYODYODYO <small>됴됴됴</small></a>
       <nav class="flinks" aria-label="바닥 메뉴">
         <a href="#business" data-en="What we do">사업분야</a>
-        <a href="#games" data-en="Games">게임</a>
+        <a href="#games" data-en="Projects">프로젝트</a>
         <a href="#about" data-en="About">회사소개</a>
         <a href="#support" data-en="Contact">문의</a>
         <a href="privacy.html" data-en="Privacy Policy">개인정보처리방침</a>
       </nav>
     </div>
+    <p class="fslogan" data-en="A Studio That Turns Ideas into Reality. We keep making fun things.">아이디어를 현실로 만드는 스튜디오. 재미있는 걸 꾸준히 만듭니다.</p>
     <!-- 사업자 정보 (전자상거래법 표시사항) -->
     <div class="bizinfo">
       <span><span data-en="Company">상호</span> : <span data-en="DYODYODYO">됴됴됴</span></span>
@@ -680,7 +685,7 @@ function render(){
     <article class="game reveal in">
       ${iconHtml(g,lang)}
       <div><span class="badge ${g.status}">${(g.badge&&g.badge[lang])||t[g.status]}</span>${g.video?` <span class="vtag">▶ ${t.vtag}</span>`:""}<h3>${g.title[lang]}</h3>
-        <div class="genre">${g.genre[lang]}</div><p>${g.desc[lang]}</p>
+        <div class="genre"><b>GAME</b> · ${g.genre[lang]} · ${g.platform||"Android"}</div><p>${g.desc[lang]}</p>
         <div class="stores">${g.play?`<a href="${g.play}" target="_blank" rel="noopener">▶ ${t.play}</a>`:`<span>${t.none}</span>`}${pvHtml(g,"game")?pvBtn():""}</div>
         ${g.note&&g.note[lang]?`<p class="gnote">${g.note[lang]}</p>`:""}
         ${pvHtml(g,"game")}
