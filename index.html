@@ -247,23 +247,23 @@
   @media (max-width:480px){.game{grid-template-columns:72px 1fr;gap:14px;padding:20px 18px}.game .gi{width:72px;height:72px;border-radius:18px;font-size:32px}}
 
   /* Contents */
-  #contents{padding:72px 0}
-  #contents .head{margin-bottom:28px}
+  #contents{padding:56px 0}
+  #contents .head{margin-bottom:22px}
   .contents{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .ct{background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:14px;display:flex;gap:16px;align-items:stretch;transition:transform .2s,box-shadow .2s}
+  .ct{background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:12px;display:flex;gap:14px;align-items:center;transition:transform .2s,box-shadow .2s}
   .ct:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-  .ct .cover{flex:none;align-self:flex-start;width:92px;height:124px;border-radius:12px;display:flex;justify-content:center;align-items:flex-end;font-size:36px;overflow:hidden;padding:12px 0 0}
+  .ct .cover{flex:none;width:62px;height:82px;border-radius:10px;display:flex;justify-content:center;align-items:flex-end;font-size:26px;overflow:hidden;padding:9px 0 0}
   .ct .cover>span{align-self:center}
-  .ct .cover img{width:68px;height:auto;border-radius:3px 3px 0 0;box-shadow:0 -2px 12px rgba(7,21,46,.18)}
+  .ct .cover img{width:46px;height:auto;border-radius:3px 3px 0 0;box-shadow:0 -2px 12px rgba(7,21,46,.18)}
   .ct .body{display:flex;flex-direction:column;min-width:0;flex:1;padding:2px 0}
   .ct .kind{font-weight:800;font-size:14px;color:var(--muted)}
-  .ct h3{font-size:17.5px;margin-bottom:4px}
+  .ct h3{font-size:16.5px;margin-bottom:6px;line-height:1.35}
   .ct p{font-size:14px;line-height:1.6;flex:1;margin-bottom:8px}
   .ct a.more{align-self:flex-start;font-weight:800;font-size:14px;color:var(--navy);border-bottom:3px solid var(--yellow);padding:2px 0}
   .ct a.more:hover{border-color:var(--navy)}
   .ct span.more{align-self:flex-start;font-weight:800;font-size:14px;color:var(--muted);padding:2px 0}
   @media (max-width:1040px){.contents{grid-template-columns:1fr;max-width:640px}}
-  @media (max-width:600px){#contents{padding:56px 0}}
+  @media (max-width:600px){#contents{padding:44px 0}}
 
   /* About */
   #about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -713,7 +713,7 @@ function render(){
     </article>`).join("");
   document.getElementById("contentList").innerHTML=CONTENTS.map(c=>`
     <article class="ct reveal in"><div class="cover" style="background:${c.color}">${c.cover?`<img src="${c.cover}" alt="${c.title[lang]}${lang==="ko"?" 표지":" cover"}" loading="lazy">`:`<span aria-hidden="true">${c.emoji}</span>`}</div>
-      <div class="body"><div class="kind">${c.kind[lang]}</div><h3>${c.title[lang]}</h3><p>${c.desc[lang]}</p>
+      <div class="body"><div class="kind">${c.kind[lang]}</div><h3>${c.title[lang]}</h3>
       <div class="ctact">${c.link?`<a class="more" href="${c.link}" target="_blank" rel="noopener">${t.more}</a>`:`<span class="more">${t.ready}</span>`}${pvHtml(c,"book")?pvBtn():""}</div></div>
       ${pvHtml(c,"book")}</article>`).join("");
   document.getElementById("faq").innerHTML=FAQ.map(f=>`<details><summary>${f.q[lang]}</summary><p>${f.a[lang]}</p></details>`).join("");
